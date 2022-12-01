@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head><!--4. Faça um script que pede dois inteiros e armazene eles em duas variáveis.
+    Em seguida, troque o valor das variáveis, invertendo e exibindo o antes e o depois em uma janela de alert.-->
+
+    <script>
+        function check(){
+            var n1 = window.document.form2.n1.value;
+
+            var n2 = window.document.form2.n2.value;
+                     //n1 = 5
+                    //n2  = 10
+                    // aux = n1   aux =5
+                    // n1 = n2  =>  n1 = 10
+                    // n2 = aux  =>   n2 =5 
+
+            var aux=n1;
+            n1=n2;
+         
+            n2=aux
+         alert("Antes: " +aux+ " e " +n1);
+         alert("Depois: " +n1+ " e " +aux)
+
+        }
+
+
+
+    </script>
+<body>
+    <form name="form2" action="">
+        Digite o primeiro número:<br/>
+        <input type="text" id="n1"><br/><br/>
+        Digite o segundo número:<br/>
+        <input type="" id="n2"><br/><br/>
+        <input type="submit" onclick="check()" value="Verificar">
+
+
+    </form>
+</body>
+</html>
